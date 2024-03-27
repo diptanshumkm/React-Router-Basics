@@ -6,13 +6,22 @@ import Labs from './components/Labs';
 import About from './components/About';
 import { NavLink } from 'react-router-dom';
 import MainHeader from './components/MainHeader';
+import Myclass from './components/Myclass';
 
 
 function App() {
 
+function clickHandler(e){
+  console.log(e);
+}
 
   return (
     <div className="App">
+
+      <Myclass></Myclass>
+      <div>
+        <button onClick={clickHandler}>Submit</button>
+      </div>
         
     <ul>
       <li>
